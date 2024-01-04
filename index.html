@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form
+      id="survey-form"
+      action=""
+    >
+      <div class="form-group">
+        <label id="name-label" for="name"
+          >Name
+          <input id="name" type="text" placeholder="Enter your name" required
+        /></label>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Number
+          <input
+            id="number"
+            type="number"
+            min="10"
+            max="100"
+            placeholder="Age (optional)"
+        /></label>
+      </div>
+      <div class="form-group">
+        <label for="dropdown"
+          >Which option best describes your current role?
+          <select id="dropdown" required>
+            <option value="">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Employed">Employed</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </div>
+      <fieldset class="form-group">
+        <legend>Would you recommend our services?</legend>
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="recommendation"
+            value="Yes"
+            checked
+          /><span>Yes</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="recommendation"
+            value="No"
+          /><span>No</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="recommendation"
+            value="Maybe"
+          /><span>Maybe</span></label
+        >
+      </fieldset>
+      <fieldset class="form-group">
+        <legend>What would you like to see improved?</legend>
+        <label
+          ><input
+            type="checkbox"
+            class="inline"
+            value="Front-end Projects"
+          />Front-end Projects</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="inline"
+            value="Back-end Projects"
+          />Back-end Projects</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="inline"
+            value="Challenges"
+          />Challenges</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="inline"
+            value="Data Visualization"
+          />Data Visualization</label
+        >
+      </fieldset>
+      <div class="form-group">
+        <label for="bio">Any comments or suggestions?</label>
+        <textarea
+          id="bio"
+          name="bio"
+          rows="7"
+          cols="30"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+    </form>
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>

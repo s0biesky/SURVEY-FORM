@@ -1,0 +1,106 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: tahoma;
+  font-size: 16px;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.4),
+      rgba(136, 136, 206, 0.5)
+    ),
+    url("/survey-form-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+  color: white;
+}
+
+p {
+  margin-top: -1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 4px 0;
+}
+
+legend {
+  padding: 0;
+  padding-top: 4px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #2b2e5c;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  display: inline;
+}
+
+#survey-form {
+  color: white;
+  width: 80%;
+  background-color: #262645;
+  opacity: 0.99;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+::placeholder {
+  color: white;
+}
+
+textarea {
+  resize: none;
+  font-size: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+.form-group {
+  padding-bottom: 4px;
+}
